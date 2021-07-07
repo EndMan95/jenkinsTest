@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     stages {
-        stage('test auto deploy') { 
+        stage('Clone') { 
             steps {
                 git branch: 'main', url: 'https://github.com/EndMan95/jenkinsTest.git'
             }
